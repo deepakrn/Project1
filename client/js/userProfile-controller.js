@@ -17,11 +17,12 @@ app.controller('userProfileController', ['$scope', '$resource', function ($scope
     userProfile.grad.gpa=$scope.grad_gpa;
     userProfile.dob=$scope.dob;    
     console.log(userProfile);
-    userProfile.$save(function (err,result) {
-      if(err)
-        console.log("error"+err);
-      else
+    userProfile.$save(function (result) {
+      if(result){        
       console.log(result); 
+      window.location="../";
+      }
+      
     
     //window.location ="../";  
     });
