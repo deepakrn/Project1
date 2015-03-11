@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="user-profile">
+	<head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>User Profile</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  	</head>
+  	<body>
+  	<div ng-controller="userProfileController">
+  	<form ng-submit="createUserProfile()">
+          <input type="text" placeholder="first name" ng-model="firstName"></input>
+          <input type="text" placeholder="last name" ng-model="lastName"></input>
+          <input type="text" placeholder="undergrad college" ng-model="undergrad_college"></input>
+          <input type="text" placeholder="undergrad course" ng-model="undergrad_course"></input>
+          <input type="text" placeholder="undergrad gpa" ng-model="undergrad_gpa"></input>
+          <input type="text" placeholder="grad college" ng-model="grad_college"></input>
+          <input type="text" placeholder="grad course" ng-model="grad_course"></input>
+          <input type="text" placeholder="grad gpa" ng-model="grad_gpa"></input>
+          <input type="text" placeholder="DOB" ng-model="dob"></input>
+          <button type="submit">Add</button>
+    </form> 
+  	</div>
+  	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular-resource.js"></script>
+      <script type="text/javascript" src="/js/app.js"></script>
+  	<script type="text/javascript" src="/js/userProfile-controller.js"></script>
+  	
+  	</body>
+ </html>
